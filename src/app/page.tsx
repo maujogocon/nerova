@@ -6,7 +6,7 @@ import IconFeatures from "../components/IconFeatures";
 import ScrollTech from "@/components/ScrollTech";
 import About from "@/components/About";
 import Features from "@/components/Features";
-import Team from "@/components/Team";
+
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 
@@ -21,7 +21,7 @@ export default function Home() {
              <About/>
              <Features />
              <ScrollTech />
-             <Team />
+
              <FAQ/>
              <Contact />
         </div>

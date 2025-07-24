@@ -133,11 +133,11 @@ const Footer = () => {
                    FAG
                </Link>
              </li>
-             <li>
+            {/* <li>
                 <Link href="#team" className="hover:underline">
                     Team
                 </Link>
-             </li>
+             </li>*/}
              <li>
                 <Link href="#contact" className="hover:underline">
                     Contact
