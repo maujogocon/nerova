@@ -152,15 +152,15 @@ const Footer = () => {
       <div className="mt-12 border-t border-gray-700 py-4 text-sm text-center text-gray-400">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-4">
           <div className="mb-2 md:mb-0">
-            © {new Date().getFullYear()}, NEROVA Theme |{" "}
+            © {new Date().getFullYear()}, NEROVA Theme |{' '}
             <Link href="#" className="hover:underline">
               Team
-            </Link>{" "}
-            |{" "}
+            </Link>{' '}
+            |{' '}
             <Link href="#" className="hover:underline">
               Privacy Policy
-            </Link>{" "}
-            |{" "}
+            </Link>{' '}
+            |{' '}
             <Link href="#" className="hover:underline">
               Sitemap
             </Link>
