@@ -3,7 +3,6 @@
 // components/Footer.tsx
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -48,7 +47,7 @@ const Footer = () => {
           </form>
 
           <p className="mt-4 italic text-sm text-gray-400">
-            "Adaptamos la IA  a tus necesidades."
+            Adaptamos la IA  a tus necesidades.
           </p>
         </div>
 
@@ -152,7 +151,7 @@ const Footer = () => {
       <div className="mt-12 border-t border-gray-700 py-4 text-sm text-center text-gray-400">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-4">
           <div className="mb-2 md:mb-0">
-            © {new Date().getFullYear()}, NEROVA Theme |{' '}
+            &copy; {new Date().getFullYear()}, NEROVA Theme |{' '}
             <Link href="#" className="hover:underline">
               Team
             </Link>{' '}

@@ -1,8 +1,6 @@
 // Página principal de la aplicación.
 // Renderiza las secciones principales del sitio web.
 
-import Image from "next/image";
-
 import Hero from "../components/Hero";
 import IconFeatures from "../components/IconFeatures";
 import ScrollTech from "@/components/ScrollTech";
