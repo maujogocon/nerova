@@ -5,7 +5,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="w-full     md:px-16 flex items-center">
+    <section className="w-full     md:px-16 flex items-center ">
 
       <div className="max-w-screen-xl w-full mx-auto flex flex-col md:flex-row items-center justify-between  gap-8 min-h-[300px]">
         {/* Contenedor de texto */}
@@ -14,14 +14,15 @@ const HeroSection = () => {
             <h1 className="text-6xl md:text-7xl font-bold mb-2">
               <span className="text-cyPurple">NERO</span><span className="text-cyan-300">VA</span>
             </h1>
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4">Impulsando la Inteligencia Artificial en tu organización </h2>
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4">Impulsa tu organización con tecnología inteligente </h2>
           </div>
 
           <div className="text-center md:text-left">
             <p className="text-lg md:text-xl">
-               Impulsamos a tu organización con soluciones basadas en inteligencia artificial
-               que optimizan cada interacción. Automatizamos respuestas, aceleramos procesos
-               y ofrecemos una experiencia más ágil, personalizada y eficiente para cada usuario.
+               Desarrollamos plataformas web, apps móviles y sistemas de inteligencia artificial que se adaptan
+               a tu industria para optimizar procesos, mejorar la experiencia del cliente y generar resultados reales
+               que transformen la forma en que tu organizacion trabaje.
+
             </p>
           </div>
 
@@ -37,7 +38,7 @@ const HeroSection = () => {
           <div className="flex justify-center md:justify-end">
             <a href="#contact">
             <button className="bg-cyPurple text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-cyPurple/80 transition-all">
-              Contactanos
+              Solicita tu Demo
             </button>
             </a>
           </div>

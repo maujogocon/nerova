@@ -10,7 +10,7 @@ const list = [
 	{
 		icon: <FaStore size={36} />,
 		title: "E-commerce",
-		description: "Automatiza la atención al cliente con chatbots inteligentes.",
+		description: "Atención al cliente automatizada, recomendadores inteligentes, integración con CRM.",
 	},
 	{
 		icon: <FaUserCog  size={36} />,
@@ -20,12 +20,12 @@ const list = [
 	{
 		icon: <FaChalkboardTeacher size={36} />,
 		title: "Marketing",
-		description: "Identifica oportunidades virales y personaliza contenido en tiempo real.",
+		description: "Automatización de leads, chatbots para campañas, análisis de comportamiento de usuarios.",
 	},
     {
 		icon: <FaBriefcaseMedical  size={36} />,
 		title: "Salud",
-		description: "Optimiza recursos mediante el análisis de tiempos de espera.",
+		description: "Agendamiento de citas, orientación médica automatizada, procesamiento seguro de datos.",
 	},
     {
 		icon: <FaDesktop size={36} />,
@@ -35,7 +35,7 @@ const list = [
     {
         icon: <FaSeedling  size={36} />,
     	title: "Agricultura y Agroindustria",
-    	description: "Analiza cultivos y condiciones del terreno con drones e IA.",
+    	description: "Gestión de cultivos, monitoreo automatizado, soporte técnico vía chatbot.",
     },
 
 ];
@@ -46,8 +46,8 @@ const IconFeatures = () => {
 
 			<div className="text-2xl font-bold    border-2 border-transparent bg-gradient-to-r from-cyPurple via-cyan-300 to-cyPurple   bg-opacity-30 backdrop-blur-md rounded">
 				<IconBoxSection
-					title="Impulsa el crecimiento de tu organización"
-					subtitle="Adaptamos la IA a las necesidades unicas de  cada industria y acompañamos a las empresas en su camino hacia la innovación, el crecimiento y la eficiencia operativa."
+					title="Somos especialistas en IA para múltiples industrias."
+					subtitle="Adaptamos nuestras soluciones de IA, automatización y desarrollo a las necesidades únicas de distintos sectores."
 					list={list}
 					bgColor="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900"
 					textColor="text-white"

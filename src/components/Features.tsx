@@ -46,7 +46,7 @@ const Features = () => {
 		<section id="features" className="w-full  px-7 ">
 		    <div className="gap-2 flex flex-col items-center">
                                  <h2 className="text-3xl md:text-4xl font-bold text-center mt-8 mb-4">
-                                    <span className="text-purple-600">Nos Caracterizamos por:</span>
+                                    <span className="text-purple-600">Capacidades de Nerova</span>
                                  </h2>
                                  <p className="text-lg leading-relaxed max-w-xl">
                                   <span className="font-semibold">
@@ -74,11 +74,13 @@ const Features = () => {
 								}
 							>
 								<Icon className={activeIndex === index ? "text-cyan-300 w-10 h-10" : "text-cyPurple w-10 h-10"}/>
-								<h3 className={`text-xl font-bold ${activeIndex === index ? "text-cyPurple" : "text-white"}`}>{title}</h3>
-								{activeIndex === index && (
-									<p className="text-white  mt-2 ml-4">
-										{description}
-									</p>
+								{activeIndex === index ? (
+                                      <div className="flex flex-col items-center">
+                                              <h3 className="text-xl font-bold text-cyPurple">{title}</h3>
+                                              <p className="text-white mt-2">{description}</p>
+                                      </div>
+                                    ) : (
+                                      <h3 className="text-xl font-bold text-white">{title}</h3>
 								)}
 							</div>
 						))}
