@@ -11,21 +11,21 @@ export default function WhatWeDo() {
       title: "Desarrollo Web y Mobile",
       description:
         "Creamos sitios, plataformas y apps totalmente personalizadas, diseñadas para crecer contigo y adaptarse a las necesidades específicas de tu sector.",
-      image: "/images/data.png",
+      image: "/images/development.png",
     },
     {
       icon: <FaRobot className="text-4xl text-purple-400" />,
       title: "Aplicaciones basadas en IA",
       description:
         "Desde motores de recomendación hasta asistentes virtuales, nuestras soluciones inteligentes aprenden, se adaptan y generan impacto en tus procesos.",
-      image: "/images/bot.png",
+      image: "/images/IA.png",
     },
     {
       icon: <FaComments className="text-4xl text-purple-400" />,
       title: "Chatbots con Inteligencia Artificial",
       description:
         "Diseñamos asistentes conversacionales que entienden, responden y ejecutan tareas. Integrables con tus sistemas, operativos 24/7 y listos para escalar.",
-      image: "/images/dev.png",
+      image: "/images/chat-bots.png",
     },
   ];
 
