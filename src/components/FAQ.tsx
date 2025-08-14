@@ -39,7 +39,7 @@ const FAQ = () => {
 	// Cambio automático de tab cada 4 segundos si no hay interacción
     	useEffect(() => {
     		const interval = setInterval(() => {
-    			setActiveIndex((prev) => (prev + 1) % features.length);
+    			setActiveIndex((prev) => ((prev ?? 0) + 1) % features.length);
     		}, 4000);
     		return () => clearInterval(interval);
     	}, []);
