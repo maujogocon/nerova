@@ -46,16 +46,15 @@ const Features = () => {
 		<section id="features" className="w-full  px-7 ">
 		    <div className="gap-2 flex flex-col items-center">
                                  <h2 className="text-3xl md:text-4xl font-bold text-center mt-8 mb-4">
-                                    <span className="text-purple-600">Capacidades de Nerova</span>
+                                    <span className="text-purple-600">Servicios Principales de Nerova</span>
                                  </h2>
                                  <p className="text-lg leading-relaxed max-w-xl">
                                   <span className="font-semibold">
-                                    Escuchar tus ideas, entender tus desafíos y los convertirlos en
-                                    soluciones reales que impulsan el valor y la competitividad de
-                                    tu negocio.
+                                    Nuestra misión es transformar ideas en soluciones que generen valor y aceleren
+                                    el crecimiento de tu empresa.
                                   </span>
                                  </p>
-                            </div>
+            </div>
 			<div className="w-auto max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row items-center gap-5">
 
 				{/* Columna de servicios */}

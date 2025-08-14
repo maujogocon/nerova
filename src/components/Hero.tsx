@@ -49,7 +49,7 @@ const HeroSection = () => {
         <div className="w-full  md:w-2/5 flex justify-center md:justify-start items-end relative min-h-[200px] sm:min-h-[300px] md:min-h-[400px] order-2 md:order-none">
           <div className="relative w-full h-full flex justify-center md:justify-start items-end">
             <Image
-              src="/images/nero.png"
+              src="/images/nero1.png"
               alt="Nero IA"
               width={400}
               height={400}

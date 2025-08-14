@@ -44,17 +44,17 @@ const FAQ = () => {
                                  </h2>
                             </div>
 			<div className="w-auto max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row items-center gap-5">
-                 {/* Columna de imagen */}
-                 				<div className="w-full md:w-2/5 flex justify-center items-center h-full max-h-full">
-                 					<Image
-                 						src="/images/FAQ.png"
-                 						alt="AI Chatbot"
-                 						width={300}
-                 						height={428}
-                 						className="w-[60%] h-full max-w-xs md:max-w-md lg:max-w-lg max-h-full object-contain drop-shadow-xl"
-                 						priority
-                 					/>
-                 				</div>
+				 {/* Columna de imagen */}
+               <div className="w-full md:w-2/5 flex justify-center items-center h-full max-h-full">
+                 	<Image
+                 		src="/images/FAQ.png"
+                 		alt="AI Chatbot"
+                 		width={300}
+                 		height={428}
+                 		className="w-[60%] h-full max-w-xs md:max-w-md lg:max-w-lg max-h-full object-contain drop-shadow-xl"
+                 		priority
+                 	/>
+             	</div>
 				{/* Columna de servicios */}
 				<div className="w-full md:w-3/5 flex flex-col justify-center gap-8 p-6 md:p-12">
 					<div className="grid gap-8 md:grid-cols-1 text-2xl ">
@@ -84,8 +84,10 @@ const FAQ = () => {
 						))}
 					</div>
 				</div>
-
+				 
+                
 			</div>
+			
 		</section>
 	);
 };

@@ -19,10 +19,12 @@ export default function Home() {
         <div className="relative z-10">
              <Hero />
              <IconFeatures />
-             <HeroBot/>
-             <WhatWeDo />
+
+
              <About/>
              <Features />
+             <HeroBot/>
+             <WhatWeDo />
              <ScrollTech />
              <FAQ/>
              <Contact />

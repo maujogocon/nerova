@@ -42,7 +42,7 @@ export default function WhatWeDo() {
 
   return (
     <section id="whatwedo" className="w-full  px-7 py-8 md:py-18">
-      <div className=" max-w-screen-xl mx-auto px-12 grid md:grid-cols-2 gap-2 items-center ">
+      <div className=" max-w-screen-xl mx-auto px-2  md:px-12 grid md:grid-cols-2 gap-2 items-center ">
 
         {/* Columna izquierda: Tarjetas */}
         <div className="space-y-7 items-center flex flex-col">
@@ -69,13 +69,13 @@ export default function WhatWeDo() {
         </div>
 
         {/* Columna derecha: Imagen dinámica con fade */}
-        <div className="flex justify-center items-center relative">
+        <div className="flex justify-center items-center relative py-2">
           <div className="relative w-80 h-80 md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
             <Image
               src={services[activeIndex].image}
               alt={services[activeIndex].title}
               fill
-              className={`object-cover rounded-xl transition-opacity duration-500 ${fade ? "opacity-0" : "opacity-100"}`}
+              className={`object-contain rounded-xl transition-opacity duration-500 ${fade ? "opacity-0" : "opacity-100"}`}
             />
             {/* Efecto de borde brillante */}
             <div className="absolute inset-0 rounded-xl border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.2)] pointer-events-none" />
