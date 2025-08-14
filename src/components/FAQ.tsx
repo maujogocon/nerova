@@ -35,7 +35,7 @@ const features = [
 
 ];
 const FAQ = () => {
-	const [activeIndex, setActiveIndex] = useState<number | null>(null);
+	const [activeIndex, setActiveIndex] = useState<number | null>(0);
 	// Cambio automático de tab cada 4 segundos si no hay interacción
     	useEffect(() => {
     		const interval = setInterval(() => {

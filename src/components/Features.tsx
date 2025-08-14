@@ -41,7 +41,7 @@ const features = [
 	},
 ];
 const Features = () => {
-	const [activeIndex, setActiveIndex] = useState<number>(0);
+	const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
 	// Cambio automático de tab cada 4 segundos si no hay interacción
 	useEffect(() => {
