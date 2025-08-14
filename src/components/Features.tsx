@@ -4,7 +4,7 @@
 
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaChartBar, FaCogs, FaCloud, FaCode, FaComments } from "react-icons/fa";
 import Image from "next/image";
 
@@ -13,74 +13,78 @@ const features = [
 		icon: FaChartBar,
 		title: "Analisis de Datos",
 		description:
-			"Exploramos constantemente nuevas tecnologías para mantenerte a la vanguardia.",
+			"Ofrecemos análisis de datos avanzado para descubrir patrones, tendencias y oportunidades que impulsen la toma de decisiones estratégicas.",
 	},
 	{
 		icon: FaCogs,
 		title: "Automatización Inteligente de Procesos",
 		description:
-			"Soluciones basadas en inteligencia artificial para optimizar tus procesos.",
+			"Automatización inteligente de procesos mediante IA, optimizando tareas repetitivas y mejorando la eficiencia operativa de tu empresa.",
 	},
 	{
 		icon: FaCloud,
 		title: "Cloud",
 		description:
-			"Protegemos tus datos con las últimas medidas en ciberseguridad.",
+			"Aprovechamos la potencia de la nube para crecer sin límites y reducir costos de infraestructura.",
 	},
-    {
+	{
 		icon: FaCode,
 		title: "Desarrollo de Software",
 		description:
-			"Protegemos tus datos con las últimas medidas en ciberseguridad.",
+			"Desarrollamos soluciones web a medida, adaptadas a las necesidades de tu negocio.",
 	},
-    {
+	{
 		icon: FaComments,
 		title: "Integración de Api y Chatbots",
 		description:
-			"Protegemos tus datos con las últimas medidas en ciberseguridad.",
+			"Conectamos tus sistemas mediante integración de APIs y desarrollamos chatbots inteligentes para mejorar la interacción con tus clientes.",
 	},
 ];
 const Features = () => {
-	const [activeIndex, setActiveIndex] = useState<number | null>(null);
+	const [activeIndex, setActiveIndex] = useState<number>(0);
+
+	// Cambio automático de tab cada 4 segundos si no hay interacción
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setActiveIndex((prev) => (prev + 1) % features.length);
+		}, 4000);
+		return () => clearInterval(interval);
+	}, []);
 	return (
 		<section id="features" className="w-full  px-7 ">
-		    <div className="gap-2 flex flex-col items-center">
-                                 <h2 className="text-3xl md:text-4xl font-bold text-center mt-8 mb-4">
-                                    <span className="text-purple-600">Servicios Principales de Nerova</span>
-                                 </h2>
-                                 <p className="text-lg leading-relaxed max-w-xl">
-                                  <span className="font-semibold">
-                                    Nuestra misión es transformar ideas en soluciones que generen valor y aceleren
-                                    el crecimiento de tu empresa.
-                                  </span>
-                                 </p>
-            </div>
-			<div className="w-auto max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row items-center gap-5">
-
+			<div className="w-auto max-w-screen-xl mx-auto gap-2 flex flex-col items-center">
+				<h2 className="text-3xl md:text-4xl font-bold text-center mt-8 mb-4">
+					<span className="text-purple-600">Servicios Principales de Nerova</span>
+				</h2>
+				<p className="text-lg leading-relaxed ">
+					<span className="font-semibold">
+						Nuestra misión es transformar ideas en soluciones que generen valor y aceleren el crecimiento de tu empresa.
+					</span>
+				</p>
+			</div>
+			<div className="w-auto max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-5">
 				{/* Columna de servicios */}
 				<div className="w-full md:w-3/5 flex flex-col justify-center gap-8 p-6 md:p-12">
 					<div className="grid gap-8 md:grid-cols-1 text-2xl ">
 						{features.map(({ icon: Icon, title, description }, index) => (
 							<div
 								key={index}
-								className={`flex flex-col md:flex-row items-center text-center gap-4 cursor-pointer transition-colors duration-300 rounded-lg p-6 border-2 border-transparent ${
+								className={`flex items-center gap-4 cursor-pointer transition-colors duration-300 rounded-lg p-6 border-2 border-transparent ${
 									activeIndex === index
 										? "bg-transparent text-white"
 										: "bg-gray-900"
 								}`}
-								onClick={() =>
-									setActiveIndex(activeIndex === index ? null : index)
-								}
+								onClick={() => setActiveIndex(activeIndex === index ? null : index)}
 							>
-								<Icon className={activeIndex === index ? "text-cyan-300 w-10 h-10" : "text-cyPurple w-10 h-10"}/>
-								{activeIndex === index ? (
-                                      <div className="flex flex-col items-center">
-                                              <h3 className="text-xl font-bold text-cyPurple">{title}</h3>
-                                              <p className="text-white mt-2">{description}</p>
-                                      </div>
-                                    ) : (
-                                      <h3 className="text-xl font-bold text-white">{title}</h3>
-								)}
+								<Icon className={activeIndex === index ? "text-cyPurple w-10 h-10" : "text-cyan-300 w-10 h-10"}/>
+								<div className="flex flex-col items-start w-full">
+									<div className="flex items-center gap-2 w-full">
+										<h3 className={`text-xl font-bold ${activeIndex === index ? "text-cyPurple" : "text-white"}`}>{title}</h3>
+									</div>
+									{activeIndex === index && (
+										<p className="text-white mt-2 text-base text-left w-full">{description}</p>
+									)}
+								</div>
 							</div>
 						))}
 					</div>

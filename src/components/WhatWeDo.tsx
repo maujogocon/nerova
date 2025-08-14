@@ -22,7 +22,7 @@ export default function WhatWeDo() {
     },
     {
       icon: <FaComments className="text-4xl text-purple-400" />,
-      title: "Chatbots con Inteligencia Artificial",
+      title: "Chatbots automatizados",
       description:
         "Diseñamos asistentes conversacionales que entienden, responden y ejecutan tareas. Integrables con tus sistemas, operativos 24/7 y listos para escalar.",
       image: "/images/chat-bots.png",
