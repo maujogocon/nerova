@@ -19,7 +19,7 @@ const features = [
 		icon: FaCogs,
 		title: "Automatización Inteligente de Procesos",
 		description:
-			"Automatización inteligente de procesos mediante IA, optimizando tareas repetitivas y mejorando la eficiencia operativa de tu empresa.",
+			"Automatización inteligente de procesos, optimizando tareas repetitivas y mejorando la eficiencia operativa de tu empresa.",
 	},
 	{
 		icon: FaCloud,
